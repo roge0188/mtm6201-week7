@@ -1,0 +1,31 @@
+.dice circle{
+    fill: red;
+    transform: all 0.5s;
+    transform-origin: 25px 25px;
+
+}
+.dice: hover circle{
+    transform: scale(1.1);
+}
+
+.cls-1{fill:#ffe269;}
+.cls-2{fill:#fff;}
+.cls-3{fill:#fcf0c0;}
+
+@keyframes move {
+    0%{
+        transform: translateX(0)
+    }
+    50%{
+        transform: translateX(10px)
+    }
+    100% {
+        transform: translateX(0)
+    }
+}
+.pupil {
+    animation: move 1s infinite;
+}
+.smiley-wrap:hover .pupil {
+    animation: alternate-reverse 1s;
+}
